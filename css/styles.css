@@ -308,11 +308,13 @@ template {
 }
 
 body {
+  font-family: "Nunito", sans-serif;
   background: #f0e7d8;
   color: #1f2421;
   display: flex;
   flex-direction: column;
   text-align: center;
+  width: 100vw;
   box-sizing: border-box;
 }
 body ul {
@@ -327,16 +329,17 @@ body ul {
   }
 }
 header {
-  width: 100vw;
   border-bottom: 5px solid #63ccca;
 }
 header h1 {
   color: #63ccca;
   margin: auto;
+  font-size: 5rem;
 }
 header a {
   text-decoration: none;
   color: #1f2421;
+  font-size: 1.35rem;
 }
 header a:hover {
   text-decoration: underline;
@@ -346,14 +349,17 @@ header ul {
   padding-left: 0;
 }
 header div {
+  height: 20vh;
+  width: 100%;
   display: flex;
   flex-direction: row;
 }
-header div div {
-  width: 50vw;
-}
 header div div:first-of-type {
   border-right: 5px solid #63ccca;
+  width: 35%;
+}
+header div div:nth-of-type(2) {
+  width: calc(65% - 5px);
 }
 header div div:nth-of-type(n + 3) {
   display: none;

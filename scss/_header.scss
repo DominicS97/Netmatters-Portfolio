@@ -3,15 +3,16 @@
 // Default menu
 
 header {
-	width: calc(100vw);
 	border-bottom: 5px solid $highlight;
 	h1 {
 		color: $highlight;
 		margin: auto;
+		font-size: 5rem;
 	}
 	a {
 		text-decoration: none;
 		color: $text;
+		font-size: 1.35rem;
 		&:hover {
 			text-decoration: underline;
 		}
@@ -21,13 +22,16 @@ header {
 		padding-left: 0;
 	}
 	div {
+		height: calc(20vh);
+		width: calc(100%);
 		display: flex;
 		flex-direction: row;
-		div {
-			width: calc(50vw);
-		}
 		div:first-of-type {
 			border-right: 5px solid $highlight;
+			width: calc(35%);
+		}
+		div:nth-of-type(2) {
+			width: calc(65% - 5px);
 		}
 		div:nth-of-type(n + 3) {
 			display: none;

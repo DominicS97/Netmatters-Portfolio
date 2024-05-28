@@ -1,11 +1,13 @@
 // Body styles
 
 body {
+	font-family: "Nunito", sans-serif;
 	background: $background;
 	color: $text;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
+	width: calc(100vw);
 	ul {
 		list-style: none;
 	}
