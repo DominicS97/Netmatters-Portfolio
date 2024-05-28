@@ -1,17 +1,57 @@
 // Header styles
 
+// Default menu
+
 header {
-    display: flex;
-    flex-direction: column;
-    border-right: 5px solid $highlight;
-    position: fixed;
-    left: 0;
-    width: 20vw;
-    div:nth-of-type(n+2) {
-        border-top: 5px solid $highlight;
-    }
-    p {
-        color: $background;
-        height: 100vh;
-    }
+	width: calc(100vw);
+	border-bottom: 5px solid $highlight;
+	h1 {
+		color: $highlight;
+		margin: auto;
+	}
+	a {
+		text-decoration: none;
+		color: $text;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	ul {
+		margin: auto;
+		padding-left: 0;
+	}
+	div {
+		display: flex;
+		flex-direction: row;
+		div {
+			width: calc(50vw);
+		}
+		div:first-of-type {
+			border-right: 5px solid $highlight;
+		}
+		div:nth-of-type(n + 3) {
+			display: none;
+		}
+	}
+}
+
+// Vertical menu
+@include media-large {
+	header {
+		position: fixed;
+		left: 0;
+		div {
+			display: flex;
+			flex-direction: column;
+			border-right: 5px solid $highlight;
+			width: $header-width;
+			div:nth-of-type(n + 2) {
+				border-top: 5px solid $highlight;
+			}
+			p {
+				color: $background;
+				height: 100vh;
+			}
+		}
+	}
 }

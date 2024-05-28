@@ -311,7 +311,7 @@ body {
   background: #f0e7d8;
   color: #1f2421;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   text-align: center;
   box-sizing: border-box;
 }
@@ -319,26 +319,65 @@ body ul {
   list-style: none;
 }
 
-main, footer {
-  margin-left: calc(20vw + 5px);
+@media screen and (min-width: 992px) {
+  main,
+  footer {
+    margin-left: 204px;
+    width: calc(100% - 199px - 5px);
+  }
 }
-
 header {
+  width: 100vw;
+  border-bottom: 5px solid #63ccca;
+}
+header h1 {
+  color: #63ccca;
+  margin: auto;
+}
+header a {
+  text-decoration: none;
+  color: #1f2421;
+}
+header a:hover {
+  text-decoration: underline;
+}
+header ul {
+  margin: auto;
+  padding-left: 0;
+}
+header div {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+}
+header div div {
+  width: 50vw;
+}
+header div div:first-of-type {
   border-right: 5px solid #63ccca;
-  position: fixed;
-  left: 0;
-  width: 20vw;
 }
-header div:nth-of-type(n+2) {
-  border-top: 5px solid #63ccca;
-}
-header p {
-  color: #f0e7d8;
-  height: 100vh;
+header div div:nth-of-type(n + 3) {
+  display: none;
 }
 
+@media screen and (min-width: 992px) {
+  header {
+    position: fixed;
+    left: 0;
+  }
+  header div {
+    display: flex;
+    flex-direction: column;
+    border-right: 5px solid #63ccca;
+    width: 199px;
+  }
+  header div div:nth-of-type(n + 2) {
+    border-top: 5px solid #63ccca;
+  }
+  header div p {
+    color: #f0e7d8;
+    height: 100vh;
+  }
+}
 #splash {
   background: #683257;
   color: #ab92bf;
@@ -355,14 +394,16 @@ header p {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-#contact {
-  display: flex;
-  flex-direction: row;
-}
-#contact form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-#contact form input:nth-child(n+3) {
-  grid-column-start: span 2;
+@media screen and (min-width: 992px) {
+  #contact {
+    display: flex;
+    flex-direction: row;
+  }
+  #contact form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #contact form input:nth-child(n+3) {
+    grid-column-start: span 2;
+  }
 }/*# sourceMappingURL=styles.css.map */

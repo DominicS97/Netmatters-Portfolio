@@ -1,17 +1,22 @@
 // Body styles
 
 body {
-    background: $background;
-    color: $text;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    ul {
-        list-style: none;
-    }
-    box-sizing: border-box;
+	background: $background;
+	color: $text;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	ul {
+		list-style: none;
+	}
+	box-sizing: border-box;
 }
 
-main, footer {
-    margin-left: calc(20vw + 5px);
+// Adjusting to vertical menu
+@include media-large {
+	main,
+	footer {
+		margin-left: calc($header-width + 5px);
+		width: calc(100% - $header-width - 5px);
+	}
 }
