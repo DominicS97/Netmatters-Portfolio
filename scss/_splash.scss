@@ -4,9 +4,18 @@
 	background: $spot-dark;
 	color: $spot-light;
 	text-align: center;
-	height: 100vh;
+	height: calc(80vh - 5px);
 	h1 {
-		padding-top: 25%;
+		padding-top: 50%;
 		margin-top: 0;
+	}
+}
+
+// Large styles
+
+@include media-large {
+	#splash {
+		height: calc(100vh);
+		max-height: 820px;
 	}
 }

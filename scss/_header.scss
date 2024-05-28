@@ -13,6 +13,7 @@ header {
 		text-decoration: none;
 		color: $text;
 		font-size: 1.35rem;
+		font-weight: 600;
 		&:hover {
 			text-decoration: underline;
 		}
@@ -54,7 +55,40 @@ header {
 			}
 			p {
 				color: $background;
-				height: 100vh;
+				height: calc(100vh);
+			}
+		}
+		// reset properties
+		border-bottom: none;
+		h1 {
+			color: $highlight;
+			margin: auto;
+			font-size: 5rem;
+		}
+		a {
+			text-decoration: none;
+			color: $text;
+			font-size: 1.35rem;
+			font-weight: 600;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		ul {
+			margin: auto;
+			padding-left: 0;
+		}
+		div {
+			height: auto;
+			div:first-of-type {
+				border-right: 5px solid $highlight;
+				width: $header-width;
+			}
+			div:nth-of-type(2) {
+				width: $header-width;
+			}
+			div:nth-of-type(n + 3) {
+				display: block;
 			}
 		}
 	}

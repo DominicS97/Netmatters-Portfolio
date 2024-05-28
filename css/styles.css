@@ -314,7 +314,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 100vw;
+  width: 100%;
   box-sizing: border-box;
 }
 body ul {
@@ -340,6 +340,7 @@ header a {
   text-decoration: none;
   color: #1f2421;
   font-size: 1.35rem;
+  font-weight: 600;
 }
 header a:hover {
   text-decoration: underline;
@@ -369,6 +370,7 @@ header div div:nth-of-type(n + 3) {
   header {
     position: fixed;
     left: 0;
+    border-bottom: none;
   }
   header div {
     display: flex;
@@ -383,27 +385,82 @@ header div div:nth-of-type(n + 3) {
     color: #f0e7d8;
     height: 100vh;
   }
+  header h1 {
+    color: #63ccca;
+    margin: auto;
+    font-size: 5rem;
+  }
+  header a {
+    text-decoration: none;
+    color: #1f2421;
+    font-size: 1.35rem;
+    font-weight: 600;
+  }
+  header a:hover {
+    text-decoration: underline;
+  }
+  header ul {
+    margin: auto;
+    padding-left: 0;
+  }
+  header div {
+    height: auto;
+  }
+  header div div:first-of-type {
+    border-right: 5px solid #63ccca;
+    width: 199px;
+  }
+  header div div:nth-of-type(2) {
+    width: 199px;
+  }
+  header div div:nth-of-type(n + 3) {
+    display: block;
+  }
 }
 #splash {
   background: #683257;
   color: #ab92bf;
   text-align: center;
-  height: 100vh;
+  height: calc(80vh - 5px);
 }
 #splash h1 {
-  padding-top: 25%;
+  padding-top: 50%;
   margin-top: 0;
 }
 
+@media screen and (min-width: 992px) {
+  #splash {
+    height: 100vh;
+    max-height: 820px;
+  }
+}
 #projects {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  #projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 992px) {
+  #projects {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+#contact div {
+  display: none;
 }
 
 @media screen and (min-width: 992px) {
   #contact {
     display: flex;
     flex-direction: row;
+  }
+  #contact div {
+    display: block;
   }
   #contact form {
     display: grid;

@@ -1,6 +1,23 @@
 // Project stlyes
 
 #projects {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+	display: flex;
+	flex-direction: column;
+}
+
+// Medium style
+
+@include media-med {
+	#projects {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+// Large style
+
+@include media-large {
+	#projects {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
 }

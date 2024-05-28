@@ -1,11 +1,20 @@
 // Contact form styles
 
+#contact {
+	div {
+		display: none;
+	}
+}
+
 // Large style
 
 @include media-large {
 	#contact {
 		display: flex;
 		flex-direction: row;
+		div {
+			display: block;
+		}
 		form {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
