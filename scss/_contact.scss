@@ -1,0 +1,13 @@
+// Contact form styles
+
+#contact {
+    display: flex;
+    flex-direction: row;
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        input:nth-child(n+3) {
+            grid-column-start: span 2;
+        }
+    }
+}

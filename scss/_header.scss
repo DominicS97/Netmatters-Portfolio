@@ -1,0 +1,17 @@
+// Header styles
+
+header {
+    display: flex;
+    flex-direction: column;
+    border-right: 5px solid $highlight;
+    position: fixed;
+    left: 0;
+    width: 20vw;
+    div:nth-of-type(n+2) {
+        border-top: 5px solid $highlight;
+    }
+    p {
+        color: $background;
+        height: 100vh;
+    }
+}

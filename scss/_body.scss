@@ -1,0 +1,17 @@
+// Body styles
+
+body {
+    background: $background;
+    color: $text;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    ul {
+        list-style: none;
+    }
+    box-sizing: border-box;
+}
+
+main, footer {
+    margin-left: calc(20vw + 5px);
+}
