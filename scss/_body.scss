@@ -2,6 +2,7 @@
 
 body {
 	font-family: "Nunito", sans-serif;
+	font-size: 1.1rem;
 	background: $background;
 	color: $text;
 	display: flex;
@@ -10,8 +11,20 @@ body {
 	width: calc(100%);
 	ul {
 		list-style: none;
+		padding-left: 0;
 	}
 	box-sizing: border-box;
+	h1,
+	h2 {
+		font-size: 1.7rem;
+	}
+	h3 {
+		font-size: 1.3rem;
+	}
+}
+
+main {
+	background: $background-light;
 }
 
 // Adjusting to vertical menu

@@ -3,6 +3,32 @@
 #projects {
 	display: flex;
 	flex-direction: column;
+	img {
+		max-width: calc(80%);
+		padding: 20px;
+	}
+	h2,
+	h3 {
+		text-align: left;
+		padding-left: calc(20%);
+		margin-top: auto;
+	}
+}
+
+#projects-detail {
+	display: flex;
+	flex-direction: column;
+	img {
+		width: calc(80%);
+		max-width: 800px;
+		padding: 20px;
+	}
+	h2,
+	h3 {
+		text-align: left;
+		padding-left: calc(20%);
+		margin-top: auto;
+	}
 }
 
 // Medium style

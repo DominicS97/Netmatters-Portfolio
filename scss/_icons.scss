@@ -1,0 +1,41 @@
+// Icons
+
+// Load in font
+
+@font-face {
+	font-family: "Icon";
+	src: url("../fonts/icon.eot");
+	src: url("../fonts/icon.woff") format("woff"),
+		url("../fonts/icon.ttf") format("truetype");
+}
+
+// Add icons
+
+// #icn-chev:before {
+// 	font-family: "Icon";
+// 	content: "\ea80";
+// 	font-size: 5rem;
+// 	color: $highlight;
+// }
+
+#icn-github:before {
+	font-family: "Icon";
+	content: "\eab0";
+	font-size: 2.5rem;
+	@at-root #icn-github:hover {
+		color: $text-hover;
+	}
+}
+
+#icn-down:before {
+	font-family: "Icon";
+	content: "\e900";
+}
+
+#icn-up:before {
+	font-family: "Icon";
+	content: "\e901";
+	@at-root #icn-up {
+		display: block;
+	}
+}

@@ -309,6 +309,7 @@ template {
 
 body {
   font-family: "Nunito", sans-serif;
+  font-size: 1.1rem;
   background: #f0e7d8;
   color: #1f2421;
   display: flex;
@@ -319,6 +320,18 @@ body {
 }
 body ul {
   list-style: none;
+  padding-left: 0;
+}
+body h1,
+body h2 {
+  font-size: 1.7rem;
+}
+body h3 {
+  font-size: 1.3rem;
+}
+
+main {
+  background: #faf8f3;
 }
 
 @media screen and (min-width: 992px) {
@@ -328,11 +341,38 @@ body ul {
     width: calc(100% - 199px - 5px);
   }
 }
+@font-face {
+  font-family: "Icon";
+  src: url("../fonts/icon.eot");
+  src: url("../fonts/icon.woff") format("woff"), url("../fonts/icon.ttf") format("truetype");
+}
+#icn-github:before {
+  font-family: "Icon";
+  content: "\eab0";
+  font-size: 2.5rem;
+}
+#icn-github:hover {
+  color: #333c37;
+}
+
+#icn-down:before {
+  font-family: "Icon";
+  content: "\e900";
+}
+
+#icn-up:before {
+  font-family: "Icon";
+  content: "\e901";
+}
+#icn-up {
+  display: block;
+}
+
 header {
-  border-bottom: 5px solid #63ccca;
+  border-bottom: 5px solid #38aba9;
 }
 header h1 {
-  color: #63ccca;
+  color: #38aba9;
   margin: auto;
   font-size: 5rem;
 }
@@ -356,7 +396,7 @@ header div {
   flex-direction: row;
 }
 header div div:first-of-type {
-  border-right: 5px solid #63ccca;
+  border-right: 5px solid #38aba9;
   width: 35%;
 }
 header div div:nth-of-type(2) {
@@ -375,18 +415,18 @@ header div div:nth-of-type(n + 3) {
   header div {
     display: flex;
     flex-direction: column;
-    border-right: 5px solid #63ccca;
+    border-right: 5px solid #38aba9;
     width: 199px;
   }
   header div div:nth-of-type(n + 2) {
-    border-top: 5px solid #63ccca;
+    border-top: 5px solid #38aba9;
   }
   header div p {
     color: #f0e7d8;
     height: 100vh;
   }
   header h1 {
-    color: #63ccca;
+    color: #38aba9;
     margin: auto;
     font-size: 5rem;
   }
@@ -407,7 +447,7 @@ header div div:nth-of-type(n + 3) {
     height: auto;
   }
   header div div:first-of-type {
-    border-right: 5px solid #63ccca;
+    border-right: 5px solid #38aba9;
     width: 199px;
   }
   header div div:nth-of-type(2) {
@@ -438,6 +478,32 @@ header div div:nth-of-type(n + 3) {
   display: flex;
   flex-direction: column;
 }
+#projects img {
+  max-width: 80%;
+  padding: 20px;
+}
+#projects h2,
+#projects h3 {
+  text-align: left;
+  padding-left: 20%;
+  margin-top: auto;
+}
+
+#projects-detail {
+  display: flex;
+  flex-direction: column;
+}
+#projects-detail img {
+  width: 80%;
+  max-width: 800px;
+  padding: 20px;
+}
+#projects-detail h2,
+#projects-detail h3 {
+  text-align: left;
+  padding-left: 20%;
+  margin-top: auto;
+}
 
 @media screen and (min-width: 768px) {
   #projects {
@@ -450,8 +516,17 @@ header div div:nth-of-type(n + 3) {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-#contact div {
+#contact ul {
   display: none;
+}
+#contact form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+#contact form input:nth-child(n+3) {
+  grid-column-start: span 2;
 }
 
 @media screen and (min-width: 992px) {
@@ -459,8 +534,8 @@ header div div:nth-of-type(n + 3) {
     display: flex;
     flex-direction: row;
   }
-  #contact div {
-    display: block;
+  #contact ul {
+    display: inline;
   }
   #contact form {
     display: grid;
@@ -468,5 +543,20 @@ header div div:nth-of-type(n + 3) {
   }
   #contact form input:nth-child(n+3) {
     grid-column-start: span 2;
+  }
+}
+footer {
+  border-top: 5px solid #38aba9;
+}
+footer div:nth-of-type(3) {
+  border-top: 5px solid #38aba9;
+}
+
+@media screen and (min-width: 992px) {
+  footer div:nth-of-type(-n + 2) {
+    display: none;
+  }
+  footer div:nth-of-type(3) {
+    border-top: none;
   }
 }/*# sourceMappingURL=styles.css.map */

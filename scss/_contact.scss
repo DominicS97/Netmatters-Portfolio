@@ -1,8 +1,17 @@
 // Contact form styles
 
 #contact {
-	div {
+	ul {
 		display: none;
+	}
+	form {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		input:nth-child(n + 3) {
+			grid-column-start: span 2;
+		}
+		margin-left: calc(10%);
+		margin-right: calc(10%);
 	}
 }
 
@@ -12,8 +21,8 @@
 	#contact {
 		display: flex;
 		flex-direction: row;
-		div {
-			display: block;
+		ul {
+			display: inline;
 		}
 		form {
 			display: grid;
