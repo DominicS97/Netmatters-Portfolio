@@ -7,8 +7,15 @@
 	form {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		input:nth-child(n + 3) {
+		column-gap: 15px;
+		row-gap: 8px;
+		input:nth-child(n + 3),
+		textarea {
 			grid-column-start: span 2;
+		}
+		#submit {
+			grid-column-start: span 1;
+			margin-top: 7px;
 		}
 		margin-left: calc(10%);
 		margin-right: calc(10%);

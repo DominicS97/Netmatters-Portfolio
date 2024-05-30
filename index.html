@@ -13,7 +13,7 @@
 	</head>
 
 	<body>
-		<header>
+		<header id="header">
 			<!-- container for sidebar items -->
 			<div>
 				<!-- logo -->
@@ -26,7 +26,7 @@
 				<div>
 					<ul>
 						<li><a href="about.html">About Me</a></li>
-						<li><a href="index.html">My Portfolio</a></li>
+						<li><a href="index.html#projects">My Portfolio</a></li>
 						<li><a href="projects.html">Projects</a></li>
 						<li><a href="scs.html">SCS Scheme</a></li>
 					</ul>
@@ -50,7 +50,7 @@
 			<div id="splash">
 				<h1>My Name is Dominic Sutcliffe</h1>
 				<h2>I'm a Web Developer</h2>
-				<h3>Scroll Down</h3>
+				<h3><a href="#projects">Scroll Down</a></h3>
 				<span id="icn-down"></span>
 			</div>
 
@@ -58,38 +58,48 @@
 			<div id="projects">
 				<div>
 					<img src="/img/project_example.png" />
-					<h2>Project One</h2>
-					<h3>View Project</h3>
+					<h2>Netmatters Homepage</h2>
+					<h3>
+						<a
+							href="https://github.com/DominicS97/Netmatters-HTML-CSS-Assessment"
+							>View Project</a
+						>
+					</h3>
 				</div>
 
 				<div>
 					<img src="/img/project_example.png" />
-					<h2>Project Two</h2>
-					<h3>View Project</h3>
+					<h2>Portfolio</h2>
+					<h3>
+						<a
+							href="https://github.com/DominicS97/Netmatters-Portfolio"
+							>View Project</a
+						>
+					</h3>
 				</div>
 
 				<div>
 					<img src="/img/project_example.png" />
 					<h2>Project Three</h2>
-					<h3>View Project</h3>
+					<h3><a href="#">View Project</a></h3>
 				</div>
 
 				<div>
 					<img src="/img/project_example.png" />
 					<h2>Project Four</h2>
-					<h3>View Project</h3>
+					<h3><a href="#">View Project</a></h3>
 				</div>
 
 				<div>
 					<img src="/img/project_example.png" />
 					<h2>Project Five</h2>
-					<h3>View Project</h3>
+					<h3><a href="#">View Project</a></h3>
 				</div>
 
 				<div>
 					<img src="/img/project_example.png" />
 					<h2>Project Six</h2>
-					<h3>View Project</h3>
+					<h3><a href="#">View Project</a></h3>
 				</div>
 			</div>
 
@@ -106,19 +116,36 @@
 				</div>
 
 				<form>
-					<input />
-					<input />
-					<input />
-					<input />
-					<input />
-					<button>Submit</button>
+					<input
+						type="text"
+						name="fname"
+						placeholder="First Name..."
+					/>
+					<input
+						type="text"
+						name="lname"
+						placeholder="Last Name..."
+					/>
+					<input
+						type="text"
+						name="email"
+						placeholder="Email Address..."
+					/>
+					<input
+						type="text"
+						name="phone"
+						placeholder="Phone Number..."
+					/>
+					<textarea name="message" placeholder="Your Message...">
+					</textarea>
+					<input id="submit" type="button" value="Submit" />
 				</form>
 			</div>
 
 			<!-- container for return -->
 			<div>
 				<span id="icn-up"></span>
-				<a>Back To Top</a>
+				<a href="#header">Back To Top</a>
 			</div>
 		</main>
 

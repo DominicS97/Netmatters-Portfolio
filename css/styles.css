@@ -329,6 +329,15 @@ body h2 {
 body h3 {
   font-size: 1.3rem;
 }
+body a {
+  text-decoration: none;
+  color: #1f2421;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+body a:hover {
+  text-decoration: underline;
+}
 
 main {
   background: #faf8f3;
@@ -375,15 +384,6 @@ header h1 {
   color: #38aba9;
   margin: auto;
   font-size: 5rem;
-}
-header a {
-  text-decoration: none;
-  color: #1f2421;
-  font-size: 1.35rem;
-  font-weight: 600;
-}
-header a:hover {
-  text-decoration: underline;
 }
 header ul {
   margin: auto;
@@ -467,6 +467,9 @@ header div div:nth-of-type(n + 3) {
   padding-top: 50%;
   margin-top: 0;
 }
+#splash a {
+  color: #ab92bf;
+}
 
 @media screen and (min-width: 992px) {
   #splash {
@@ -481,6 +484,7 @@ header div div:nth-of-type(n + 3) {
 #projects img {
   max-width: 80%;
   padding: 20px;
+  border-radius: 30px;
 }
 #projects h2,
 #projects h3 {
@@ -497,6 +501,7 @@ header div div:nth-of-type(n + 3) {
   width: 80%;
   max-width: 800px;
   padding: 20px;
+  border-radius: 50px;
 }
 #projects-detail h2,
 #projects-detail h3 {
@@ -522,11 +527,18 @@ header div div:nth-of-type(n + 3) {
 #contact form {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  column-gap: 15px;
+  row-gap: 8px;
   margin-left: 10%;
   margin-right: 10%;
 }
-#contact form input:nth-child(n+3) {
+#contact form input:nth-child(n+3),
+#contact form textarea {
   grid-column-start: span 2;
+}
+#contact form #submit {
+  grid-column-start: span 1;
+  margin-top: 7px;
 }
 
 @media screen and (min-width: 992px) {
