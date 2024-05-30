@@ -5,6 +5,13 @@
 	color: $spot-light;
 	text-align: center;
 	height: calc(80vh - 5px);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	h3 {
+		margin-top: auto;
+	}
 	h1 {
 		padding-top: 50%;
 		margin-top: 0;

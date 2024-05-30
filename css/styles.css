@@ -338,6 +338,10 @@ body a {
 body a:hover {
   text-decoration: underline;
 }
+body p {
+  margin-left: 10%;
+  margin-right: 10%;
+}
 
 main {
   background: #faf8f3;
@@ -462,6 +466,13 @@ header div div:nth-of-type(n + 3) {
   color: #ab92bf;
   text-align: center;
   height: calc(80vh - 5px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#splash h3 {
+  margin-top: auto;
 }
 #splash h1 {
   padding-top: 50%;
@@ -516,7 +527,7 @@ header div div:nth-of-type(n + 3) {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   #projects {
     grid-template-columns: 1fr 1fr 1fr;
   }
