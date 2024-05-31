@@ -572,11 +572,15 @@ header div div:nth-of-type(n + 3) {
   }
   #projects-detail div img {
     grid-row-start: span 2;
+    margin-left: auto;
   }
   #projects-detail div h3 {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+  }
+  #projects-detail div h2 {
+    margin-top: auto;
   }
 }
 #contact {

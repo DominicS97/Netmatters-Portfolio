@@ -60,11 +60,15 @@
 			grid-template-columns: 1fr 1fr;
 			img {
 				grid-row-start: span 2;
+				margin-left: auto;
 			}
 			h3 {
 				text-align: center;
 				margin-left: auto;
 				margin-right: auto;
+			}
+			h2 {
+				margin-top: auto;
 			}
 		}
 	}
