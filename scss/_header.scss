@@ -4,10 +4,15 @@
 
 header {
 	border-bottom: 5px solid $highlight;
-	img {
+	#logo {
 		margin: auto;
 		max-height: calc(100%);
 		max-width: calc(100%);
+	}
+	img {
+		margin: auto;
+		max-height: calc(60%);
+		max-width: calc(60%);
 	}
 	ul {
 		margin: auto;

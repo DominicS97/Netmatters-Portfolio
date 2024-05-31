@@ -7,17 +7,12 @@
 	}
 	form {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr;
 		column-gap: 15px;
 		row-gap: 8px;
 		margin-top: auto;
 		margin-bottom: auto;
 		max-height: 250px;
-		input:nth-child(n + 3),
-		textarea {
-			grid-column-start: span 2;
-			resize: none;
-		}
 		#submit {
 			grid-column-start: span 1;
 			margin-top: 7px;
@@ -31,11 +26,22 @@
 		textarea {
 			border-radius: 3px;
 			border: 1px solid $text-hover;
+			resize: none;
 		}
 	}
 }
 
 // Large style
+
+@include media-med {
+	form {
+		grid-template-columns: 1fr 1fr;
+		input:nth-of-type(n + 3),
+		textarea {
+			grid-column-start: span 2;
+		}
+	}
+}
 
 @include media-wide {
 	#contact {

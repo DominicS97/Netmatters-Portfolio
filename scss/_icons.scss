@@ -11,13 +11,13 @@
 
 // Add icons
 
-a:hover:before {
+.link:hover:before {
 	font-family: "Icon";
 	content: "\e903";
 	font-size: 1rem;
 }
 
-a:hover:after {
+.link:hover:after {
 	font-family: "Icon";
 	content: "\e902";
 	font-size: 1rem;
