@@ -27,10 +27,15 @@
 		border: 2px solid $text;
 	}
 	h2,
-	h3 {
+	h3,
+	p {
+		margin-left: 10%;
 		text-align: left;
-		padding-left: calc(20%);
-		margin-top: auto;
+	}
+	h3 {
+		text-align: center;
+		margin-left: auto;
+		margin-right: calc(40%);
 	}
 }
 
@@ -48,5 +53,19 @@
 @include media-wide {
 	#projects {
 		grid-template-columns: 1fr 1fr 1fr;
+	}
+	#projects-detail {
+		div {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			img {
+				grid-row-start: span 2;
+			}
+			h3 {
+				text-align: center;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
 	}
 }

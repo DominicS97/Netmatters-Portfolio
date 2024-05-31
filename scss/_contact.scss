@@ -41,6 +41,19 @@
 	#contact {
 		display: flex;
 		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		div {
+			h1,
+			p,
+			ul {
+				max-width: 600px;
+				margin-right: auto;
+				text-align: center;
+				margin-left: auto;
+			}
+			width: 50%;
+		}
 		ul {
 			display: inline;
 		}

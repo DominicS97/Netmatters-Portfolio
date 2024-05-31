@@ -387,11 +387,13 @@ a:hover:after {
 #icn-down:before {
   font-family: "Icon";
   content: "\e900";
+  font-size: 3rem;
 }
 
 #icn-up:before {
   font-family: "Icon";
   content: "\e901";
+  font-size: 2.4rem;
 }
 #icn-up {
   display: block;
@@ -462,9 +464,6 @@ header div div:nth-of-type(n + 3) {
     color: #1f2421;
     font-size: 1.35rem;
     font-weight: 600;
-  }
-  header a:hover {
-    text-decoration: underline;
   }
   header ul {
     margin: auto;
@@ -546,10 +545,15 @@ header div div:nth-of-type(n + 3) {
   border: 2px solid #1f2421;
 }
 #projects-detail h2,
-#projects-detail h3 {
+#projects-detail h3,
+#projects-detail p {
+  margin-left: 10%;
   text-align: left;
-  padding-left: 20%;
-  margin-top: auto;
+}
+#projects-detail h3 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: 40%;
 }
 
 @media screen and (min-width: 768px) {
@@ -561,6 +565,18 @@ header div div:nth-of-type(n + 3) {
 @media screen and (min-width: 1200px) {
   #projects {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  #projects-detail div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #projects-detail div img {
+    grid-row-start: span 2;
+  }
+  #projects-detail div h3 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 #contact {
@@ -602,6 +618,19 @@ header div div:nth-of-type(n + 3) {
   #contact {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #contact div {
+    width: 50%;
+  }
+  #contact div h1,
+  #contact div p,
+  #contact div ul {
+    max-width: 600px;
+    margin-right: auto;
+    text-align: center;
+    margin-left: auto;
   }
   #contact ul {
     display: inline;
@@ -616,6 +645,7 @@ header div div:nth-of-type(n + 3) {
   }
 }
 footer {
+  margin-bottom: auto;
   border-top: 5px solid #38aba9;
 }
 footer div:nth-of-type(3) {
