@@ -335,9 +335,6 @@ body a {
   font-size: 1.35rem;
   font-weight: 600;
 }
-body a:hover {
-  text-decoration: underline;
-}
 body p {
   margin-left: 10%;
   margin-right: 10%;
@@ -359,6 +356,18 @@ main {
   src: url("../fonts/icon.eot");
   src: url("../fonts/icon.woff") format("woff"), url("../fonts/icon.ttf") format("truetype");
 }
+a:hover:before {
+  font-family: "Icon";
+  content: "\e903";
+  font-size: 1rem;
+}
+
+a:hover:after {
+  font-family: "Icon";
+  content: "\e902";
+  font-size: 1rem;
+}
+
 #icn-github:before {
   font-family: "Icon";
   content: "\eab0";
@@ -384,10 +393,9 @@ main {
 header {
   border-bottom: 5px solid #38aba9;
 }
-header h1 {
-  color: #38aba9;
+header img {
   margin: auto;
-  font-size: 5rem;
+  max-height: 100%;
 }
 header ul {
   margin: auto;
@@ -500,8 +508,7 @@ header div div:nth-of-type(n + 3) {
 }
 #projects h2,
 #projects h3 {
-  text-align: left;
-  padding-left: 20%;
+  text-align: center;
   margin-top: auto;
 }
 

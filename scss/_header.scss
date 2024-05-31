@@ -4,10 +4,9 @@
 
 header {
 	border-bottom: 5px solid $highlight;
-	h1 {
-		color: $highlight;
+	img {
 		margin: auto;
-		font-size: 5rem;
+		max-height: calc(100%);
 	}
 	ul {
 		margin: auto;
