@@ -27,8 +27,10 @@ a:hover:after {
 	font-family: "Icon";
 	content: "\eab0";
 	font-size: 2.5rem;
-	@at-root #icn-github:hover {
-		color: $text-hover;
+	@at-root #icn-github {
+		&:hover {
+			color: $text-hover;
+		}
 	}
 }
 

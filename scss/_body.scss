@@ -3,6 +3,8 @@
 body {
 	font-family: "Nunito", sans-serif;
 	font-size: 1.1rem;
+	font-weight: 500;
+	line-height: 1.5rem;
 	background: $background;
 	color: $text;
 	display: flex;
@@ -35,6 +37,11 @@ body {
 
 main {
 	background: $background-light;
+}
+
+#return {
+	margin-bottom: 10px;
+	margin-top: 20px;
 }
 
 // Adjusting to vertical menu

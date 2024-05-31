@@ -7,10 +7,18 @@ header {
 	img {
 		margin: auto;
 		max-height: calc(100%);
+		max-width: calc(100%);
 	}
 	ul {
 		margin: auto;
 		padding-left: 0;
+	}
+	li {
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	a {
+		font-size: 1.6rem;
 	}
 	div {
 		height: calc(20vh);
