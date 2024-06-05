@@ -489,8 +489,8 @@ header div div:nth-of-type(n + 3) {
   }
 }
 #splash {
-  background: #683257;
-  color: #ab92bf;
+  background: #49223d;
+  color: #cab7d7;
   text-align: center;
   height: calc(80vh - 5px);
   display: flex;
@@ -510,7 +510,7 @@ header div div:nth-of-type(n + 3) {
   font-size: 2.5rem;
 }
 #splash a {
-  color: #ab92bf;
+  color: #cab7d7;
 }
 
 @media screen and (min-width: 992px) {
