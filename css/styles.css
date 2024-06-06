@@ -341,6 +341,10 @@ body p {
   margin-left: 10%;
   margin-right: 10%;
 }
+body img {
+  width: auto;
+  height: auto;
+}
 
 main {
   background: #faf8f3;
