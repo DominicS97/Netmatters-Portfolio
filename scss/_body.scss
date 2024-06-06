@@ -11,22 +11,22 @@ body {
 	flex-direction: column;
 	text-align: center;
 	width: calc(100%);
+	a,
+	h2,
+	h1 {
+		font-size: 2.2rem;
+	}
 	ul {
 		list-style: none;
 		padding-left: 0;
 	}
 	box-sizing: border-box;
-	h1,
-	h2 {
-		font-size: 1.7rem;
-	}
 	h3 {
 		font-size: 1.3rem;
 	}
 	a {
 		text-decoration: none;
 		color: $text;
-		font-size: 1.35rem;
 		font-weight: 600;
 	}
 	p {
@@ -42,6 +42,19 @@ main {
 #return {
 	margin-bottom: 10px;
 	margin-top: 20px;
+}
+
+// med fonts
+@include media-med {
+	body {
+		a {
+			font-size: 1.35rem;
+		}
+		h1,
+		h2 {
+			font-size: 1.7rem;
+		}
+	}
 }
 
 // Adjusting to vertical menu

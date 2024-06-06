@@ -320,13 +320,14 @@ body {
   width: 100%;
   box-sizing: border-box;
 }
+body a,
+body h2,
+body h1 {
+  font-size: 2.2rem;
+}
 body ul {
   list-style: none;
   padding-left: 0;
-}
-body h1,
-body h2 {
-  font-size: 1.7rem;
 }
 body h3 {
   font-size: 1.3rem;
@@ -334,7 +335,6 @@ body h3 {
 body a {
   text-decoration: none;
   color: #1f2421;
-  font-size: 1.35rem;
   font-weight: 600;
 }
 body p {
@@ -351,6 +351,15 @@ main {
   margin-top: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  body a {
+    font-size: 1.35rem;
+  }
+  body h1,
+  body h2 {
+    font-size: 1.7rem;
+  }
+}
 @media screen and (min-width: 992px) {
   main,
   footer {
@@ -363,25 +372,36 @@ main {
   src: url("../fonts/icon.eot");
   src: url("../fonts/icon.woff") format("woff"), url("../fonts/icon.ttf") format("truetype");
 }
-.link:hover:before {
+.link:hover:before,
+.link:focus:before {
   font-family: "Icon";
   content: "\e903";
-  font-size: 1rem;
+  font-size: 1.7rem;
 }
 
-.link:hover:after {
+.link:hover:after,
+.link:focus:after {
   font-family: "Icon";
   content: "\e902";
-  font-size: 1rem;
+  font-size: 1.7rem;
 }
 
-#icn-github:before {
+.icn-github:before {
   font-family: "Icon";
   content: "\eab0";
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
-#icn-github:hover {
+#icn-github:hover, #icn-github:focus {
   color: #333c37;
+}
+
+#icn-burger:before {
+  font-family: "Icon";
+  content: "\e9bd";
+  font-size: 6rem;
+}
+button:hover, button:focus {
+  color: #cab7d7;
 }
 
 #icn-down:before {
@@ -399,6 +419,38 @@ main {
   display: block;
 }
 
+@media screen and (min-width: 768px) {
+  .link:hover:before {
+    font-size: 1rem;
+  }
+  .link:hover:after {
+    font-size: 1rem;
+  }
+  #icn-down:before {
+    font-size: 2.5rem;
+  }
+  #icn-up:before {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .icn-github:before {
+    font-size: 2.5rem;
+  }
+}
+button {
+  margin: auto;
+  width: 80%;
+  height: 80%;
+  background-color: #49223d;
+  border-radius: 15px;
+  border: none;
+  color: #38aba9;
+}
+button a {
+  color: inherit;
+}
+
 header {
   border-bottom: 5px solid #38aba9;
 }
@@ -409,8 +461,8 @@ header #logo {
 }
 header img {
   margin: auto;
-  max-height: 50%;
-  max-width: 50%;
+  height: 50%;
+  width: 50%;
 }
 header ul {
   margin: auto;
@@ -420,9 +472,6 @@ header li {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-header a {
-  font-size: 1.6rem;
-}
 header div {
   height: 20vh;
   width: 100%;
@@ -431,15 +480,36 @@ header div {
 }
 header div div:first-of-type {
   border-right: 5px solid #38aba9;
-  width: 35%;
+  width: 50%;
 }
 header div div:nth-of-type(2) {
-  width: calc(65% - 5px);
+  width: calc(50% - 5px);
 }
 header div div:nth-of-type(n + 3) {
   display: none;
 }
 
+@media screen and (min-width: 576px) {
+  header div div:first-of-type {
+    border-right: 5px solid #38aba9;
+    width: 35%;
+  }
+  header div div:nth-of-type(2) {
+    display: none;
+  }
+  header div div:nth-of-type(3) {
+    display: inline-flex;
+    width: calc(65% - 5px);
+  }
+  header div div:nth-of-type(n + 4) {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  a {
+    font-size: 1.6rem;
+  }
+}
 @media screen and (min-width: 992px) {
   header {
     position: fixed;
@@ -452,7 +522,7 @@ header div div:nth-of-type(n + 3) {
     border-right: 5px solid #38aba9;
     width: 199px;
   }
-  header div div:nth-of-type(n + 2) {
+  header div div:nth-of-type(n + 3) {
     border-top: 5px solid #38aba9;
   }
   header div p {
@@ -481,10 +551,10 @@ header div div:nth-of-type(n + 3) {
     border-right: 5px solid #38aba9;
     width: 199px;
   }
-  header div div:nth-of-type(2) {
+  header div div:nth-of-type(3) {
     width: 199px;
   }
-  header div div:nth-of-type(n + 3) {
+  header div div:nth-of-type(n + 4) {
     display: block;
   }
 }
@@ -505,6 +575,8 @@ header div div:nth-of-type(n + 3) {
   margin-top: 40%;
   font-size: 4rem;
   line-height: 4rem;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 #splash h2 {
   font-size: 2.5rem;
@@ -523,6 +595,11 @@ header div div:nth-of-type(n + 3) {
     margin-top: 20%;
   }
 }
+#projects a,
+#projects h2 {
+  font-size: 2.2rem;
+}
+
 #projects {
   display: flex;
   flex-direction: column;
@@ -566,6 +643,12 @@ header div div:nth-of-type(n + 3) {
   #projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  #projects a {
+    font-size: 1.35rem;
+  }
+  #projects h2 {
+    font-size: 1.7rem;
   }
 }
 @media screen and (min-width: 1200px) {

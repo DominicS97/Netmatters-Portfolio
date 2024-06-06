@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
+		<meta charset="utf-8" />
 		<title>Portfolio | Dominic Sutcliffe</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="css/styles.css" />
@@ -22,9 +23,50 @@
 			<div>
 				<!-- logo -->
 				<div>
-					<a href="index.html" id="logo"
-						><img src="img/logo.png"
-					/></a>
+					<a href="index.html" id="logo">
+						<picture>
+							<source
+								type="image/webp"
+								media="(min-width: 1200px)"
+								srcset="img/webp/large/logo.webp"
+							/>
+							<source
+								type="image/png"
+								media="(min-width: 1200px)"
+								srcset="img/png/large/logo.png"
+							/>
+							<source
+								type="image/webp"
+								media="(min-width: 768px)"
+								srcset="img/webp/medium/logo.webp"
+							/>
+							<source
+								type="image/png"
+								media="(min-width: 768px)"
+								srcset="img/png/medium/logo.png"
+							/>
+							<source
+								type="image/webp"
+								srcset="img/webp/small/logo.webp"
+							/>
+							<img
+								alt="stylish logo"
+								src="img/png/small/logo.png"
+								width="400px"
+								height="400px"
+							/>
+						</picture>
+					</a>
+				</div>
+
+				<!-- burger menu (xsmall only) -->
+				<div>
+					<button>
+						<a
+							id="icn-burger"
+							aria-label="View Navigation Menu"
+						></a>
+					</button>
 				</div>
 
 				<!-- content page links -->
@@ -56,7 +98,8 @@
 					<a
 						href="https://github.com/DominicS97"
 						target="_blank"
-						id="icn-github"
+						class="icn-github"
+						aria-label="View GitHub page"
 					></a>
 					<p>a</p>
 				</div>
@@ -75,7 +118,10 @@
 			<!-- container for projects -->
 			<div id="projects">
 				<div>
-					<img src="img/project-1.png" />
+					<img
+						alt="screenshot of replica Netmatters homepage"
+						src="img/project-1.png"
+					/>
 					<h2>Netmatters Homepage</h2>
 					<h3>
 						<a class="link" href="projects.html#project-1"
@@ -85,7 +131,10 @@
 				</div>
 
 				<div>
-					<img src="img/project-2.png" />
+					<img
+						alt="screenshot of current webpage"
+						src="img/project-2.png"
+					/>
 					<h2>Portfolio</h2>
 					<h3>
 						<a class="link" href="projects.html#project-2"
@@ -95,7 +144,10 @@
 				</div>
 
 				<div>
-					<img src="img/project_example.png" />
+					<img
+						alt="placeholder project image"
+						src="img/project_example.png"
+					/>
 					<h2>TBA</h2>
 					<h3>
 						<a class="link" href="projects.html#project-3"
@@ -105,7 +157,10 @@
 				</div>
 
 				<div>
-					<img src="img/project_example.png" />
+					<img
+						alt="placeholder project image"
+						src="img/project_example.png"
+					/>
 					<h2>TBA</h2>
 					<h3>
 						<a class="link" href="projects.html#project-4"
@@ -115,7 +170,10 @@
 				</div>
 
 				<div>
-					<img src="img/project_example.png" />
+					<img
+						alt="placeholder project image"
+						src="img/project_example.png"
+					/>
 					<h2>TBA</h2>
 					<h3>
 						<a class="link" href="projects.html#project-5"
@@ -125,7 +183,10 @@
 				</div>
 
 				<div>
-					<img src="img/project_example.png" />
+					<img
+						alt="placeholder project image"
+						src="img/project_example.png"
+					/>
 					<h2>TBA</h2>
 					<h3>
 						<a class="link" href="projects.html#project-6"
@@ -203,7 +264,8 @@
 				<a
 					href="https://github.com/DominicS97"
 					target="_blank"
-					id="icn-github"
+					class="icn-github"
+					aria-label="View GitHub page"
 				></a>
 				<br />
 			</div>

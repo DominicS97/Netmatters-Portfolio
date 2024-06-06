@@ -1,6 +1,19 @@
 // Header styles
 
-// Default menu
+// Button
+
+button {
+	margin: auto;
+	width: calc(80%);
+	height: calc(80%);
+	background-color: $spot-dark;
+	border-radius: 15px;
+	border: none;
+	color: $highlight;
+	a {
+		color: inherit;
+	}
+}
 
 header {
 	border-bottom: 5px solid $highlight;
@@ -11,8 +24,8 @@ header {
 	}
 	img {
 		margin: auto;
-		max-height: calc(50%);
-		max-width: calc(50%);
+		height: calc(50%);
+		width: calc(50%);
 	}
 	ul {
 		margin: auto;
@@ -22,9 +35,6 @@ header {
 		margin-top: 5px;
 		margin-bottom: 5px;
 	}
-	a {
-		font-size: 1.6rem;
-	}
 	div {
 		height: calc(20vh);
 		width: calc(100%);
@@ -32,14 +42,44 @@ header {
 		flex-direction: row;
 		div:first-of-type {
 			border-right: 5px solid $highlight;
-			width: calc(35%);
+			width: calc(50%);
 		}
 		div:nth-of-type(2) {
-			width: calc(65% - 5px);
+			width: calc(50% - 5px);
 		}
 		div:nth-of-type(n + 3) {
 			display: none;
 		}
+	}
+}
+
+// Small+ menu
+
+@include media-small {
+	header {
+		div {
+			div:first-of-type {
+				border-right: 5px solid $highlight;
+				width: calc(35%);
+			}
+			div:nth-of-type(2) {
+				display: none;
+			}
+			div:nth-of-type(3) {
+				display: inline-flex;
+				width: calc(65% - 5px);
+			}
+			div:nth-of-type(n + 4) {
+				display: none;
+			}
+		}
+	}
+}
+
+// link font size reset
+@include media-med {
+	a {
+		font-size: 1.6rem;
 	}
 }
 
@@ -53,7 +93,7 @@ header {
 			flex-direction: column;
 			border-right: 5px solid $highlight;
 			width: $header-width;
-			div:nth-of-type(n + 2) {
+			div:nth-of-type(n + 3) {
 				border-top: 5px solid $highlight;
 			}
 			p {
@@ -84,10 +124,10 @@ header {
 				border-right: 5px solid $highlight;
 				width: $header-width;
 			}
-			div:nth-of-type(2) {
+			div:nth-of-type(3) {
 				width: $header-width;
 			}
-			div:nth-of-type(n + 3) {
+			div:nth-of-type(n + 4) {
 				display: block;
 			}
 		}
