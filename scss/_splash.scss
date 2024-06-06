@@ -1,7 +1,6 @@
 // Splash styling
 
 #splash {
-	background: $spot-dark;
 	color: $spot-light;
 	text-align: center;
 	height: calc(80vh - 5px);
@@ -25,6 +24,22 @@
 	a {
 		color: $spot-light;
 	}
+	h3,
+	h2,
+	h1,
+	a,
+	span {
+		z-index: 1;
+	}
+	img {
+		position: absolute;
+		left: 0;
+		top: calc(20vh + 5px);
+		z-index: 0;
+		object-fit: cover;
+		width: calc(100%);
+		height: calc(80vh - 5px);
+	}
 }
 
 // Large styles
@@ -32,6 +47,12 @@
 @include media-large {
 	#splash {
 		height: calc(100vh);
+		img {
+			left: calc($header-width + 5px);
+			top: 0;
+			width: calc(100vw - $header-width - 5px);
+			height: 100%;
+		}
 	}
 }
 

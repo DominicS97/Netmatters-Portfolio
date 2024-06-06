@@ -559,7 +559,6 @@ header div div:nth-of-type(n + 3) {
   }
 }
 #splash {
-  background: #49223d;
   color: #cab7d7;
   text-align: center;
   height: calc(80vh - 5px);
@@ -584,10 +583,32 @@ header div div:nth-of-type(n + 3) {
 #splash a {
   color: #cab7d7;
 }
+#splash h3,
+#splash h2,
+#splash h1,
+#splash a,
+#splash span {
+  z-index: 1;
+}
+#splash img {
+  position: absolute;
+  left: 0;
+  top: calc(20vh + 5px);
+  z-index: 0;
+  object-fit: cover;
+  width: 100%;
+  height: calc(80vh - 5px);
+}
 
 @media screen and (min-width: 992px) {
   #splash {
     height: 100vh;
+  }
+  #splash img {
+    left: 204px;
+    top: 0;
+    width: calc(100vw - 199px - 5px);
+    height: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
