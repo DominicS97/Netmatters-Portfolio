@@ -16,6 +16,10 @@ button {
 }
 
 header {
+	z-index: 1;
+	position: relative;
+	flex: 1;
+	min-height: 160px;
 	border-bottom: 5px solid $highlight;
 	#logo {
 		margin: auto;
@@ -37,6 +41,7 @@ header {
 	}
 	div {
 		height: calc(20vh);
+		min-height: 160px;
 		width: calc(100%);
 		display: flex;
 		flex-direction: row;
@@ -119,6 +124,7 @@ header {
 			padding-left: 0;
 		}
 		div {
+			min-height: auto;
 			height: auto;
 			div:first-of-type {
 				border-right: 5px solid $highlight;

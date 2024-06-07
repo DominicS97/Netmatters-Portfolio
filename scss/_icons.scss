@@ -7,6 +7,7 @@
 	src: url("../fonts/icon.eot");
 	src: url("../fonts/icon.woff") format("woff"),
 		url("../fonts/icon.ttf") format("truetype");
+	font-display: block;
 }
 
 // Add icons
@@ -67,10 +68,12 @@
 // breakpoint
 
 @include media-med {
-	.link:hover:before {
+	.link:hover:before,
+	.link:focus:before {
 		font-size: 1rem;
 	}
-	.link:hover:after {
+	.link:hover:after,
+	.link:focus:after {
 		font-size: 1rem;
 	}
 	#icn-down:before {

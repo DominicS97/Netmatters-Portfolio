@@ -12,7 +12,7 @@
 		margin-top: auto;
 	}
 	h1 {
-		margin-top: 40%;
+		margin-top: 20%;
 		font-size: 4rem;
 		line-height: 4rem;
 		padding-left: 10px;
@@ -50,7 +50,7 @@
 		img {
 			left: calc($header-width + 5px);
 			top: 0;
-			width: calc(100vw - $header-width - 5px);
+			width: calc(100% - $header-width - 5px);
 			height: 100%;
 		}
 	}
