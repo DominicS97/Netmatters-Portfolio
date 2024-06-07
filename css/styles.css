@@ -693,7 +693,7 @@ header div div:nth-of-type(n + 3) {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  #projects-detail div img {
+  #projects-detail div picture {
     grid-row-start: span 2;
     margin-left: auto;
   }
