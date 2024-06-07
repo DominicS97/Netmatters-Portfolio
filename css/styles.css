@@ -620,7 +620,7 @@ header div div:nth-of-type(n + 3) {
   #splash img {
     left: 204px;
     top: 0;
-    width: calc(100% - 199px - 5px);
+    width: calc(100vw - 199px - 5px);
     height: 100%;
   }
 }
