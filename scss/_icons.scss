@@ -30,11 +30,13 @@
 	font-family: "Icon";
 	content: "\eab0";
 	font-size: 3rem;
-	@at-root #icn-github {
-		&:hover,
-		&:focus {
-			color: $text-hover;
-		}
+}
+
+// Not working for some reason :(
+#icn-github {
+	&:hover,
+	&:focus {
+		color: $text-hover;
 	}
 }
 

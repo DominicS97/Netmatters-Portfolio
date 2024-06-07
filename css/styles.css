@@ -311,7 +311,7 @@ body {
   font-family: "Nunito", sans-serif;
   font-size: 1.1rem;
   font-weight: 500;
-  line-height: 1.5rem;
+  line-height: 1.8rem;
   background: #f0e7d8;
   color: #1f2421;
   display: flex;
@@ -369,80 +369,6 @@ main {
   footer {
     margin-left: 204px;
     width: calc(100% - 199px - 5px);
-  }
-}
-@font-face {
-  font-family: "Icon";
-  src: url("../fonts/icon.eot");
-  src: url("../fonts/icon.woff") format("woff"), url("../fonts/icon.ttf") format("truetype");
-  font-display: block;
-}
-.link:hover:before,
-.link:focus:before {
-  font-family: "Icon";
-  content: "\e903";
-  font-size: 1.7rem;
-}
-
-.link:hover:after,
-.link:focus:after {
-  font-family: "Icon";
-  content: "\e902";
-  font-size: 1.7rem;
-}
-
-.icn-github:before {
-  font-family: "Icon";
-  content: "\eab0";
-  font-size: 3rem;
-}
-#icn-github:hover, #icn-github:focus {
-  color: #333c37;
-}
-
-#icn-burger:before {
-  font-family: "Icon";
-  content: "\e9bd";
-  font-size: 6rem;
-}
-button:hover, button:focus {
-  color: #cab7d7;
-}
-
-#icn-down:before {
-  font-family: "Icon";
-  content: "\e900";
-  font-size: 3rem;
-}
-
-#icn-up:before {
-  font-family: "Icon";
-  content: "\e901";
-  font-size: 2.4rem;
-}
-#icn-up {
-  display: block;
-}
-
-@media screen and (min-width: 768px) {
-  .link:hover:before,
-  .link:focus:before {
-    font-size: 1rem;
-  }
-  .link:hover:after,
-  .link:focus:after {
-    font-size: 1rem;
-  }
-  #icn-down:before {
-    font-size: 2.5rem;
-  }
-  #icn-up:before {
-    font-size: 2rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  .icn-github:before {
-    font-size: 2.5rem;
   }
 }
 button {
@@ -795,4 +721,100 @@ footer div:nth-of-type(3) {
   footer div:nth-of-type(3) {
     border-top: none;
   }
+}
+@font-face {
+  font-family: "Icon";
+  src: url("../fonts/icon.eot");
+  src: url("../fonts/icon.woff") format("woff"), url("../fonts/icon.ttf") format("truetype");
+  font-display: block;
+}
+.link:hover:before,
+.link:focus:before {
+  font-family: "Icon";
+  content: "\e903";
+  font-size: 1.7rem;
+}
+
+.link:hover:after,
+.link:focus:after {
+  font-family: "Icon";
+  content: "\e902";
+  font-size: 1.7rem;
+}
+
+.icn-github:before {
+  font-family: "Icon";
+  content: "\eab0";
+  font-size: 3rem;
+}
+
+#icn-github:hover, #icn-github:focus {
+  color: #333c37;
+}
+
+#icn-burger:before {
+  font-family: "Icon";
+  content: "\e9bd";
+  font-size: 6rem;
+}
+button:hover, button:focus {
+  color: #cab7d7;
+}
+
+#icn-down:before {
+  font-family: "Icon";
+  content: "\e900";
+  font-size: 3rem;
+}
+
+#icn-up:before {
+  font-family: "Icon";
+  content: "\e901";
+  font-size: 2.4rem;
+}
+#icn-up {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .link:hover:before,
+  .link:focus:before {
+    font-size: 1rem;
+  }
+  .link:hover:after,
+  .link:focus:after {
+    font-size: 1rem;
+  }
+  #icn-down:before {
+    font-size: 2.5rem;
+  }
+  #icn-up:before {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .icn-github:before {
+    font-size: 2.5rem;
+  }
+}
+.border-box {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10%;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  border: 3px solid #1f2421;
+  border-radius: 14px;
+  background-color: #f0e7d8;
+}
+.border-box h2 {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.code-snippet {
+  text-align: left;
+}
+.code-snippet .border-box {
+  background-color: #faf8f3;
 }/*# sourceMappingURL=styles.css.map */
