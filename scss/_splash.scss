@@ -50,7 +50,7 @@
 		img {
 			left: calc($header-width + 5px);
 			top: 0;
-			width: calc(100vw - $header-width - 5px);
+			width: calc(100vw - $header-width - 5px - $scrollbar);
 			height: 100%;
 		}
 	}
