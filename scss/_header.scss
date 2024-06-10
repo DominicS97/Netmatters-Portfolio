@@ -159,7 +159,8 @@ header {
 			margin: auto;
 			padding-left: 0;
 		}
-		div {
+		div,
+		#container {
 			min-height: auto;
 			height: auto;
 			div:first-of-type {

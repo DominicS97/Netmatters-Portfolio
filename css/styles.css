@@ -526,18 +526,22 @@ header #links {
     margin: auto;
     padding-left: 0;
   }
-  header div {
+  header div,
+  header #container {
     min-height: auto;
     height: auto;
   }
-  header div div:first-of-type {
+  header div div:first-of-type,
+  header #container div:first-of-type {
     border-right: 5px solid #38aba9;
     width: 199px;
   }
-  header div div:nth-of-type(4) {
+  header div div:nth-of-type(4),
+  header #container div:nth-of-type(4) {
     width: 199px;
   }
-  header div div:nth-of-type(n + 5) {
+  header div div:nth-of-type(n + 5),
+  header #container div:nth-of-type(n + 5) {
     display: block;
   }
 }
