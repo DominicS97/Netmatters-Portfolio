@@ -2,8 +2,17 @@
 
 #contact {
 	margin-top: 50px;
+	border-top: 5px solid $highlight;
+	padding-top: 50px;
+	div {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
 	ul {
 		display: none;
+	}
+	li {
+		font-weight: bold;
 	}
 	form {
 		display: grid;

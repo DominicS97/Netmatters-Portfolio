@@ -5,6 +5,8 @@
 	h2 {
 		font-size: 2.2rem;
 	}
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 #projects {
@@ -21,11 +23,19 @@
 		text-align: center;
 		margin-top: auto;
 	}
+	h2 {
+		margin-bottom: 10px;
+	}
+	h3 {
+		margin-bottom: 30px;
+	}
 }
 
 #projects-detail {
 	display: flex;
 	flex-direction: column;
+	margin-top: 10%;
+	margin-bottom: 10%;
 	img {
 		width: calc(80%);
 		max-width: 800px;
@@ -43,6 +53,10 @@
 		text-align: center;
 		margin-left: auto;
 		margin-right: calc(40%);
+	}
+	div {
+		margin-top: 2%;
+		margin-bottom: 2%;
 	}
 }
 
