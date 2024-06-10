@@ -36,8 +36,8 @@ header {
 	}
 	img {
 		margin: auto;
-		height: calc(50%);
-		width: calc(50%);
+		height: calc(100%);
+		width: auto;
 	}
 	ul {
 		margin: auto;
@@ -51,18 +51,23 @@ header {
 		height: calc(20vh);
 		min-height: 160px;
 		width: calc(100%);
-		display: flex;
-		flex-direction: row;
 		div:first-of-type {
 			border-right: 5px solid $highlight;
-			width: calc(50%);
-		}
-		div:nth-of-type(2) {
-			width: calc(50% - 5px);
 		}
 		div:nth-of-type(n + 3) {
 			display: none;
+			grid-column-start: span 2;
 		}
+	}
+	#container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	#links {
+		background-color: $background;
+		border-top: 5px solid $highlight;
+		border-bottom: 5px solid $highlight;
+		padding-top: 20px;
 	}
 }
 
@@ -70,7 +75,26 @@ header {
 
 @include media-small {
 	header {
-		div {
+		img {
+			margin: auto;
+			height: calc(50%);
+			width: calc(50%);
+		}
+		#links {
+			display: none;
+		}
+		#links2 {
+			border-top: none;
+			border-bottom: none;
+			ul {
+				padding-top: 5px;
+			}
+			display: block;
+		}
+		div,
+		#container {
+			display: flex;
+			flex-direction: row;
 			div:first-of-type {
 				border-right: 5px solid $highlight;
 				width: calc(35%);

@@ -25,6 +25,13 @@
 				type="text/css"
 			/>
 		</noscript>
+		<script
+			src="https://code.jquery.com/jquery-3.7.1.min.js"
+			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			crossorigin="anonymous"
+			defer
+		></script>
+		<script src="script.js" defer></script>
 	</head>
 
 	<body>
@@ -33,7 +40,7 @@
 
 		<header id="header">
 			<!-- container for sidebar items -->
-			<div>
+			<div id="container">
 				<!-- logo -->
 				<div>
 					<a href="index.html" id="logo">
@@ -74,7 +81,7 @@
 
 				<!-- burger menu (xsmall only) -->
 				<div>
-					<button>
+					<button onclick="burgerToggle();">
 						<a
 							id="icn-burger"
 							aria-label="View Navigation Menu"
@@ -83,7 +90,20 @@
 				</div>
 
 				<!-- content page links -->
-				<div>
+				<div id="links">
+					<ul>
+						<li><a class="link" href="about.html">About Me</a></li>
+						<li>
+							<a class="link" href="projects.html">Projects</a>
+						</li>
+						<li>
+							<a class="link" href="code.html">Code Snippets</a>
+						</li>
+						<li><a class="link" href="scs.html">SCS Scheme</a></li>
+					</ul>
+				</div>
+
+				<div id="links2">
 					<ul>
 						<li><a class="link" href="about.html">About Me</a></li>
 						<li>
@@ -120,8 +140,8 @@
 		<main>
 			<!-- container for splash img -->
 			<div id="splash">
-				<h1>Dominic Sutcliffe</h1>
-				<h2>Web Developer</h2>
+				<h1 id="type1">Dominic Sutcliffe</h1>
+				<h2 id="type2">Web Developer</h2>
 				<h3><a href="#projects">Scroll Down</a></h3>
 				<span id="icn-down"></span>
 				<picture>
