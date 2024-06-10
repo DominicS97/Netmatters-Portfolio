@@ -32,6 +32,10 @@ function burgerToggle() {
 	}
 }
 
-if (window.innerWidth > 575) {
-	document.getElementById("links").style.display = "block";
+function burgerForceClose() {
+	let x = window.innerWidth;
+
+	if (x >= 576) {
+		document.getElementById("links").style.display = "none";
+	}
 }

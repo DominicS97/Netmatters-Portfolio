@@ -394,7 +394,9 @@ header {
 header div:nth-of-type(3) a:hover,
 header div:nth-of-type(3) a:focus,
 header div:nth-of-type(4) a:hover,
-header div:nth-of-type(4) a:focus {
+header div:nth-of-type(4) a:focus,
+header div:nth-of-type(5) a:hover,
+header div:nth-of-type(5) a:focus {
   background: #49223d;
   color: #f0e7d8;
 }
@@ -470,13 +472,13 @@ header #links {
   header #container div:nth-of-type(2) {
     display: none;
   }
-  header div div:nth-of-type(3),
-  header #container div:nth-of-type(3) {
+  header div div:nth-of-type(4),
+  header #container div:nth-of-type(4) {
     display: inline-flex;
     width: calc(65% - 5px);
   }
-  header div div:nth-of-type(n + 4),
-  header #container div:nth-of-type(n + 4) {
+  header div div:nth-of-type(n + 5),
+  header #container div:nth-of-type(n + 5) {
     display: none;
   }
 }
@@ -489,18 +491,23 @@ header #links {
   header {
     position: fixed;
     left: 0;
+    height: 100%;
     border-bottom: none;
   }
-  header div {
+  header div,
+  header #container {
     display: flex;
     flex-direction: column;
     border-right: 5px solid #38aba9;
     width: 199px;
+    height: 100%;
   }
-  header div div:nth-of-type(n + 3) {
+  header div div:nth-of-type(n + 4),
+  header #container div:nth-of-type(n + 4) {
     border-top: 5px solid #38aba9;
   }
-  header div p {
+  header div p,
+  header #container p {
     color: #f0e7d8;
     height: 100vh;
   }
@@ -527,10 +534,10 @@ header #links {
     border-right: 5px solid #38aba9;
     width: 199px;
   }
-  header div div:nth-of-type(3) {
+  header div div:nth-of-type(4) {
     width: 199px;
   }
-  header div div:nth-of-type(n + 4) {
+  header div div:nth-of-type(n + 5) {
     display: block;
   }
 }
