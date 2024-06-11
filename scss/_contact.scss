@@ -4,6 +4,7 @@
 	margin-top: 50px;
 	border-top: 5px solid $highlight;
 	padding-top: 50px;
+	margin-bottom: 20px;
 	div {
 		padding-left: 5%;
 		padding-right: 5%;
@@ -21,7 +22,6 @@
 		row-gap: 8px;
 		margin-top: auto;
 		margin-bottom: auto;
-		max-height: 250px;
 		#submit {
 			grid-column-start: span 1;
 			margin-top: 7px;

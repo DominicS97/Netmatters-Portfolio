@@ -708,6 +708,7 @@ header #links {
   margin-top: 50px;
   border-top: 5px solid #38aba9;
   padding-top: 50px;
+  margin-bottom: 20px;
 }
 #contact div {
   padding-left: 5%;
@@ -726,7 +727,6 @@ header #links {
   row-gap: 8px;
   margin-top: auto;
   margin-bottom: auto;
-  max-height: 250px;
   margin-left: 10%;
   margin-right: 10%;
 }
