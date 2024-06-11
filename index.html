@@ -369,7 +369,7 @@
 
 			<!-- container for form -->
 			<div id="contact">
-				<div>
+				<div id="get-contact">
 					<h1>Get In Touch</h1>
 					<p>
 						I'd love to hear from fellow developers seeking to
@@ -386,44 +386,62 @@
 				</div>
 
 				<form>
-					<label for="fname">First Name:</label>
-					<input
-						type="text"
-						name="fname"
-						id="fname"
-						placeholder="First Name..."
-					/>
-					<small id="fname-check">Name is missing</small>
-					<label for="lname">Last Name:</label>
-					<input
-						type="text"
-						name="lname"
-						id="lname"
-						placeholder="Last Name..."
-					/>
-					<label for="email">Email Address:</label>
-					<input
-						type="text"
-						name="email"
-						id="email"
-						placeholder="Email Address..."
-					/>
-					<small id="email-check">Email must be valid</small>
-					<label for="phone">Phone Number:</label>
-					<input
-						type="text"
-						name="phone"
-						id="phone"
-						placeholder="Phone Number..."
-					/>
-					<small id="phone-check">Phone Number must be valid</small>
-					<label for="message">Your Message:</label>
-					<textarea
-						name="message"
-						id="message"
-						placeholder="Your Message..."
-					></textarea>
-					<small id="message-check">Message is missing</small>
+					<div>
+						<label for="fname" class="required">First Name:</label>
+						<input
+							type="text"
+							name="fname"
+							id="fname"
+							placeholder="First Name..."
+						/>
+						<small id="fname-check">Name is missing</small>
+					</div>
+					<div>
+						<label for="lname">Last Name:</label>
+						<input
+							type="text"
+							name="lname"
+							id="lname"
+							placeholder="Last Name..."
+						/>
+					</div>
+					<div>
+						<label for="email" class="required"
+							>Email Address:</label
+						>
+						<input
+							type="text"
+							name="email"
+							id="email"
+							placeholder="Email Address..."
+						/>
+						<small id="email-check">Email must be valid</small>
+					</div>
+					<div>
+						<label for="phone" class="required"
+							>Phone Number:</label
+						>
+						<input
+							type="text"
+							name="phone"
+							id="phone"
+							placeholder="Phone Number..."
+						/>
+						<small id="phone-check"
+							>Phone Number must be valid</small
+						>
+					</div>
+					<div>
+						<label for="message" class="required"
+							>Your Message:</label
+						>
+						<textarea
+							name="message"
+							id="message"
+							placeholder="Your Message..."
+						></textarea>
+						<small id="message-check">Message is missing</small>
+					</div>
 					<input id="submit" type="submit" value="Submit" />
 				</form>
 			</div>

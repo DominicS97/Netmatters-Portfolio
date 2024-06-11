@@ -5,7 +5,7 @@
 	border-top: 5px solid $highlight;
 	padding-top: 50px;
 	margin-bottom: 20px;
-	div {
+	#get-contact {
 		padding-left: 5%;
 		padding-right: 5%;
 	}
@@ -22,6 +22,16 @@
 		row-gap: 8px;
 		margin-top: auto;
 		margin-bottom: auto;
+		label {
+			font-weight: bold;
+		}
+		small,
+		label {
+			text-align: left;
+		}
+		small {
+			color: $warning;
+		}
 		#submit {
 			grid-column-start: span 1;
 			margin-top: 7px;
@@ -42,6 +52,10 @@
 			border: 1px solid $text-hover;
 			resize: none;
 		}
+		div {
+			display: flex;
+			flex-direction: column;
+		}
 	}
 }
 
@@ -50,8 +64,7 @@
 @include media-med {
 	form {
 		grid-template-columns: 1fr 1fr;
-		input:nth-of-type(n + 3),
-		textarea {
+		div:nth-of-type(n + 3) {
 			grid-column-start: span 2;
 		}
 	}
@@ -63,7 +76,7 @@
 		flex-direction: row;
 		justify-content: space-around;
 		align-items: center;
-		div {
+		#get-contact {
 			h1,
 			p,
 			ul {
@@ -81,9 +94,6 @@
 			display: grid;
 			grid-template-columns: 1fr 1fr;
 			margin-left: auto;
-			input:nth-child(n + 3) {
-				grid-column-start: span 2;
-			}
 		}
 	}
 }

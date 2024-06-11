@@ -68,6 +68,11 @@
 	}
 }
 
+.required:after {
+	content: "\a0*";
+	color: $warning;
+}
+
 // breakpoint
 
 @include media-med {
