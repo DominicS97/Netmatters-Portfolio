@@ -136,7 +136,7 @@ function validatePhone() {
 }
 
 // Submit button
-function submitFunction(event) {
+function formValidate() {
 	validateFname();
 	validateMessage();
 	validateEmail();
