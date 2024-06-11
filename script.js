@@ -48,107 +48,107 @@ function scrollTop() {
 
 // form validation
 
-$(document).ready(function () {
-	// First name required
-	$("#fname-check").hide();
-	let fnameError = true;
-	$("#fname").keyup(function () {
-		validateFname();
-	});
-
-	function validateFname() {
-		let fnameValue = $("#fname").val();
-		if (fnameValue.length == "") {
-			$("#fname-check").show();
-			fnameError = false;
-			return false;
-		} else {
-			$("#fname-check").hide();
-		}
-	}
-	// Message required
-	$("#message-check").hide();
-	let messageError = true;
-	$("#message").keyup(function () {
-		validateMessage();
-	});
-
-	function validateMessage() {
-		let messageValue = $("#message").val();
-		if (messageValue.length == "") {
-			$("#message-check").show();
-			messageError = false;
-			return false;
-		} else {
-			$("#message-check").hide();
-		}
-	}
-
-	// Validate Email
-	$("#email-check").hide();
-	let emailError = true;
-	$("#email").keyup(function () {
-		validateEmail();
-	});
-
-	function validateEmail() {
-		const email = document.getElementById("email");
-		email.addEventListener("blur", () => {
-			let regex =
-				/^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/;
-			let s = email.value;
-			if (regex.test(s)) {
-				email.classList.remove("is-invalid");
-				$("#email-check").hide();
-				emailError = true;
-			} else {
-				email.classList.add("is-invalid");
-				$("#email-check").show();
-				emailError = false;
-			}
-		});
-	}
-
-	// Validate Phone
-	$("#phone-check").hide();
-	let phoneError = true;
-	$("#phone").keyup(function () {
-		validatePhone();
-	});
-
-	function validatePhone() {
-		const phone = document.getElementById("phone");
-		phone.addEventListener("blur", () => {
-			let regex =
-				/^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$/;
-			let s = phone.value;
-			if (regex.test(s)) {
-				phone.classList.remove("is-invalid");
-				$("#phone-check").hide();
-				phoneError = true;
-			} else {
-				phone.classList.add("is-invalid");
-				$("#phone-check").show();
-				phoneError = false;
-			}
-		});
-	}
-
-	// Submit button
-	$("#submit").click(function () {
-		validateFname();
-		validateMessage();
-		validateEmail();
-		validatePhone();
-		if (
-			fnameError == true &&
-			messageError == true &&
-			emailError == true &&
-			phoneError == true
-		) {
-			return true;
-		} else {
-			return false;
-		}
-	});
+// First name required
+$("#fname-check").hide();
+let fnameError = true;
+$("#fname").keyup(function () {
+	validateFname();
 });
+
+function validateFname() {
+	let fnameValue = $("#fname").val();
+	if (fnameValue.length == "") {
+		$("#fname-check").show();
+		fnameError = false;
+		return false;
+	} else {
+		$("#fname-check").hide();
+		fnameError = true;
+	}
+}
+// Message required
+$("#message-check").hide();
+let messageError = true;
+$("#message").keyup(function () {
+	validateMessage();
+});
+
+function validateMessage() {
+	let messageValue = $("#message").val();
+	if (messageValue.length == "") {
+		$("#message-check").show();
+		messageError = false;
+		return false;
+	} else {
+		$("#message-check").hide();
+		messageError = true;
+	}
+}
+
+// Validate Email
+$("#email-check").hide();
+let emailError = true;
+$("#email").keyup(function () {
+	validateEmail();
+});
+
+function validateEmail() {
+	const email = document.getElementById("email");
+	email.addEventListener("blur", () => {
+		let regex =
+			/^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/;
+		let s = email.value;
+		if (regex.test(s)) {
+			email.classList.remove("is-invalid");
+			$("#email-check").hide();
+			emailError = true;
+		} else {
+			email.classList.add("is-invalid");
+			$("#email-check").show();
+			emailError = false;
+		}
+	});
+}
+
+// Validate Phone
+$("#phone-check").hide();
+let phoneError = true;
+$("#phone").keyup(function () {
+	validatePhone();
+});
+
+function validatePhone() {
+	const phone = document.getElementById("phone");
+	phone.addEventListener("blur", () => {
+		let regex =
+			/^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$/;
+		let s = phone.value;
+		if (regex.test(s)) {
+			phone.classList.remove("is-invalid");
+			$("#phone-check").hide();
+			phoneError = true;
+		} else {
+			phone.classList.add("is-invalid");
+			$("#phone-check").show();
+			phoneError = false;
+		}
+	});
+}
+
+// Submit button
+function submitFunction(event) {
+	validateFname();
+	validateMessage();
+	validateEmail();
+	validatePhone();
+	if (
+		fnameError == true &&
+		messageError == true &&
+		emailError == true &&
+		phoneError == true
+	) {
+		return true;
+	} else {
+		return false;
+	}
+}
