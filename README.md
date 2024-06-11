@@ -19,3 +19,7 @@
     (Test 1 5/6/2024: 99 62 96 81)
 
     (Test 2 7/6/2024: 100 100 100 100)
+
+3. Problems implementing JavaScript code into the site
+
+    Solved with the "debugger" statement and Chrome Dev Tools.
