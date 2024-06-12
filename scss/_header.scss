@@ -4,6 +4,7 @@
 
 button {
 	margin: auto;
+	margin-top: 5%;
 	width: calc(80%);
 	height: calc(80%);
 	background-color: $spot-dark;
@@ -12,6 +13,13 @@ button {
 	color: $highlight;
 	a {
 		color: inherit;
+	}
+}
+
+#container {
+	div:first-of-type,
+	#logo img {
+		max-width: calc(50vw);
 	}
 }
 
@@ -76,10 +84,12 @@ header {
 
 @include media-small {
 	header {
-		img {
-			margin: auto;
-			height: calc(50%);
-			width: calc(50%);
+		#container {
+			#logo img {
+				margin: auto;
+				height: calc(50%);
+				width: calc(50%);
+			}
 		}
 		#links {
 			display: none;

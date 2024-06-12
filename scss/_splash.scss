@@ -3,7 +3,7 @@
 #splash {
 	color: $spot-light;
 	text-align: center;
-	height: calc(80vh - 5px);
+	height: Max(calc(80vh - 5px), 576px);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -37,11 +37,11 @@
 	img {
 		position: absolute;
 		left: 0;
-		top: calc(20vh + 5px);
+		top: Max(calc(20vh + 5px), 165px);
 		z-index: 0;
 		object-fit: cover;
 		width: calc(100%);
-		height: calc(80vh - 5px);
+		height: Max(calc(80vh - 5px), 576px);
 	}
 }
 
