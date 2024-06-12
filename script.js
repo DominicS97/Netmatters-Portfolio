@@ -32,7 +32,7 @@ function burgerToggle() {
 	}
 }
 
-function burgerForceClose() {
+function burgerForceclose() {
 	let x = window.innerWidth;
 
 	if (x >= 576) {
@@ -42,9 +42,9 @@ function burgerForceClose() {
 
 // scrolling not working currently
 
-function scrollTop() {
-	window.scrollTo({ top: 0, behavior: "smooth" });
-}
+// function scrollTop() {
+// 	window.scrollTo({ top: 0, behavior: "smooth" });
+// }
 
 // form validation
 
@@ -60,7 +60,6 @@ function validateFname() {
 	if (fnameValue.length == "") {
 		$("#fname-check").show();
 		fnameError = false;
-		return false;
 	} else {
 		$("#fname-check").hide();
 		fnameError = true;
@@ -78,7 +77,6 @@ function validateMessage() {
 	if (messageValue.length == "") {
 		$("#message-check").show();
 		messageError = false;
-		return false;
 	} else {
 		$("#message-check").hide();
 		messageError = true;
@@ -136,6 +134,7 @@ function validatePhone() {
 }
 
 // Submit button
+
 function formValidate() {
 	validateFname();
 	validateMessage();
